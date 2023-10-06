@@ -23,13 +23,11 @@ document.addEventListener("DOMContentLoaded", function () {
                             th.textContent = key;
                             headerRow.appendChild(th);
 
-                            // Center-align columns with integer data type
                             if (!isNaN(data[0][key])) {
                                 th.style.textAlign = "center";
                             }
                         }
 
-                        // Center-align the header row
                         thead.style.textAlign = "center";
 
                         data.forEach(function (item) {
